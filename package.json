@@ -1,0 +1,16 @@
+{
+  "name": "lambda-calculus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "demo-1.js",
+  "scripts": {
+    "lint": "eslint *.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.7.2",
+    "eslint-plugin-lambda-calculus": "^1.0.0"
+  },
+  "dependencies": {}
+}
