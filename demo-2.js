@@ -11,10 +11,8 @@ const _log = (...args) => {
 addOne = num =>
     // ...and returns a new Church numeral:
     f =>
-        x => {
-            const numSofar = num(f)(x);
-            return f(numSofar);
-        }
+        x =>
+            f(num(f)(x))
 /**
  * Note how this works:
  *  - num(f)(x) evaluates the number (which invokes f num times)
@@ -42,10 +40,8 @@ add = num1 =>
     num2 =>
         // ...and returns a new one:
         f =>
-            x => {
-                const valFromNum2 = num2(f)(x);
-                return num1(f)(valFromNum2);
-            }
+            x =>
+                num1(f)(num2(f)(x));
 /**
  * Note how this works:
  *  - As before, num2(f)(x) evaluates num2 (which invokes f num2 times)
