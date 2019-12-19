@@ -2,7 +2,7 @@
 // Church numerals
 // -----------------------------------------------------------------------------
 const _log = (...args) => {
-    // console.log(...args);
+    console.log(...args);
 };
 
 // Not "one," but "once":

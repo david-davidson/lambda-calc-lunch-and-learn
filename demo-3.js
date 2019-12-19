@@ -145,9 +145,3 @@ console.log("true == false:", toBoolean(equals(TRUE)(FALSE)))
 console.log("false == true:", toBoolean(equals(FALSE)(TRUE)))
 console.log("false == false:", toBoolean(equals(FALSE)(FALSE)))
 console.log("true == true:", toBoolean(equals(TRUE)(TRUE)))
-
-
-
-
-
-// FALSE = x => y => y
